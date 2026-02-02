@@ -20,7 +20,6 @@ fetch('map.json')
       L.marker([pin.pin_lat, pin.pin_long]).addTo(map)
         .bindPopup(pin.pin_name + '<br>Created by: ' + pin.pin_created_by);
     });
-
     map.fitBounds(marker.getBounds());
 })
 
