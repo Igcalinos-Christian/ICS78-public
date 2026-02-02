@@ -1,0 +1,73 @@
+[
+    {
+      "map_name": "Northern Bukidnon State College",
+      "map_id": "0001",
+      "map_lat": 8.359997,
+      "map_lng": 124.868352,
+      "map_polygon_vertices": [
+        [8.361465, 124.867623],
+        [8.358812, 124.867054],
+        [8.358302, 124.869071],
+        [8.361060, 124.869640]
+      ],
+      "map_pins": [
+        {
+          "pin_id": "0001",
+          "pin_name": "NBSC Covered Court",
+          "pin_lat": 8.360031,
+          "pin_long": 124.868889,
+          "pin_created_by": "Igcalinos"
+        },
+        {
+            "pin_id": "0002",
+            "pin_name": "NBSC Student Center",
+            "pin_lat": 8.359609,
+            "pin_long": 124.869181,
+            "pin_created_by": "Igcalinos"
+        },
+        {
+            "pin_id": "0003",
+            "pin_name": "GEC Building",
+            "pin_lat": 8.359293,
+            "pin_long": 124.869136,
+            "pin_created_by": "Igcalinos"
+        },
+        {
+            "pin_id": "0004",
+            "pin_name": "TEP Building",
+            "pin_lat": 8.359909,
+            "pin_long": 124.869278,
+            "pin_created_by": "Igcalinos"
+        },
+        {
+            "pin_id": "0005",
+            "pin_name": "BSBA Building",
+            "pin_lat": 8.359155,
+            "pin_long": 124.868489,
+            "pin_created_by": "Igcalinos"
+        },
+        {
+            "pin_id": "0006",
+            "pin_name": "ADMIN Building",
+            "pin_lat": 8.359306,
+            "pin_long": 124.867870,
+            "pin_created_by": "Igcalinos"
+        },
+        {
+            "pin_id": "0007",
+            "pin_name": "SC Building",
+            "pin_lat": 8.360203,
+            "pin_long": 124.867459,
+            "pin_created_by": "Igcalinos"
+        }, 
+        {
+            "pin_id": "0008",
+            "pin_name": "Entrance/Exit",
+            "pin_lat": 8.361294,
+            "pin_long": 124.867483,
+            "pin_created_by": "Igcalinos"
+        }
+      ]
+    }
+  ]
+  
