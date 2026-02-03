@@ -24,9 +24,21 @@ class Map {
   }
 
   markerLoader(){
-    L.marker([8.360222612755031, 124.86747032364904]).addTo(map);
-    L.marker([8.359071397303623, 124.8684484713664]).addTo(map);
-    L.marker([8.359222752517207, 124.86907893624586]).addTo(map); 
+    let arr = [
+      [8.360222612755031, 124.86747032364904, "SWDC"],
+      [8.359071397303623, 124.8684484713664, "BA"],
+      [8.359222752517207, 124.86907893624586, "LAB"]
+    ];
+
+    arr.forEach((row, i) => {
+      L.marker(row).addTo(map).on('click', () =>{
+        this.infoLoader(row);
+      });
+    });
+  }
+
+  infoLoader(arr){
+    alert(arr[2]);
   }
 }
 
