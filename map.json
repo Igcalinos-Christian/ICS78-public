@@ -17,7 +17,14 @@
           "pin_lat": 8.360256128854495,
           "pin_long": 124.86740471929419,
           "pin_created_by": "Igcalinos"  
-        }
+        },
+        {
+        "pin_id": "0003",
+        "pin_name": "NBSC Admin Building",
+        "pin_lat": 8.359306,
+        "pin_long": 124.867870,
+        "pin_created_by": "Chan"
+      }
       ]
     }
   ]
