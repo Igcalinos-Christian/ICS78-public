@@ -1,43 +1,34 @@
+var map = L.map('map').setView([8.359997, 124.868352], 17);
 
-
-class Map{
-
+class Map {
   init(){
-    var map = L.map('map').setView([8.359997, 124.868352], 17);
-
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
 
-    //fetch map coords and data from json file
-    fetch('map.json')
-      .then(response => response.json())
-      .then(jsonData => {
-
-        // Add polygon to the map
-        var polygon = L.polygon(jsonData[0].map_polygon_vertices, { color: 'green' })
-              .addTo(map)
-              .bindPopup(jsonData[0].map_name);
-
-        // Add pins to the map
-        jsonData[0].map_pins.forEach(function (pin) {
-          L.marker([pin.pin_lat, pin.pin_long])
-            .addTo(map)
-            .addEventListener('click', () => {
-              alert(pin.pin_name + "pressed!" + pin.pin_created_by);
-            })
-            // .bindPopup(pin.pin_name + '<br>Created by: ' + pin.pin_created_by);
-        });
-        map.fitBounds(marker.getBounds());
-    })
-  .catch(error => console.error('Error fetching JSON:', error));
+    this.polyLoader();
   }
 
-  clickhandler(){
-    alert("pressed!");
+  polyLoader(){
+    var polygon = L.polygon([
+        [8.361465, 124.867623],
+        [8.358812, 124.867054],
+        [8.358302, 124.869071],
+        [8.361060, 124.869640]
+      ], { color: 'green' })
+      .addTo(map)
+      .bindPopup("NBSC Campus");
+
+      this.markerLoader();
+  }
+
+  markerLoader(){
+    L.marker([8.360222612755031, 124.86747032364904]).addTo(map);
+    L.marker([8.359071397303623, 124.8684484713664]).addTo(map);
+    L.marker([8.359222752517207, 124.86907893624586]).addTo(map); 
   }
 }
 
-const MyMap = new Map();
-MyMap.init();
+const M = new Map();
+M.init();
