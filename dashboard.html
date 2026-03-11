@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Map Dashboard</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#f5ede6;
+}
+
+/* main container */
+.container{
+display:flex;
+gap:40px;
+}
+
+/* panels */
+.panel{
+background:linear-gradient(180deg,#c7e6e6,#b6dede);
+padding:20px;
+border:2px solid #7bb7b7;
+}
+
+/* map panel */
+.map-panel{
+width:350px;
+height:420px;
+}
+
+.map-box{
+margin-top:10px;
+width:100%;
+height:350px;
+border:3px solid #1da2b1;
+background:#dff2f2;
+}
+
+/* info panel */
+.info-panel{
+width:500px;
+height:420px;
+}
+
+.info-content{
+display:flex;
+margin-top:10px;
+height:350px;
+}
+
+/* floor section */
+.floor-menu{
+width:120px;
+}
+
+.floor-menu h3{
+margin-bottom:10px;
+}
+
+.floor-btn{
+display:block;
+width:70px;
+margin-bottom:10px;
+padding:6px;
+border:none;
+border-radius:15px;
+background:#ffe9cc;
+cursor:pointer;
+}
+
+/* info display */
+.info-display{
+flex:1;
+background:white;
+margin-left:15px;
+border-radius:5px;
+}
+
+h2{
+color:#147a87;
+margin-bottom:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- MAP PANEL -->
+<div class="panel map-panel">
+<h2>Map</h2>
+<div class="map-box"></div>
+</div>
+
+<!-- INFO BOARD -->
+<div class="panel info-panel">
+<h2>Info Board</h2>
+
+<div class="info-content">
+
+<div class="floor-menu">
+<p><b>&lt;Building&gt;</b></p>
+<h3>Floors</h3>
+
+<button class="floor-btn">1st</button>
+<button class="floor-btn">2nd</button>
+<button class="floor-btn">3rd</button>
+
+</div>
+
+<div class="info-display"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
